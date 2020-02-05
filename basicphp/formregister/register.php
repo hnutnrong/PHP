@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Register</title>
+        <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <h1>ลงทะเบียน</h1>
@@ -14,7 +15,7 @@
 
     <label for ="password">Password: </label>
     <input type ="text" name ="password" require autofocus>
-    
+
     <label for ="email">E-mail: </label>
     <input type ="email" name ="email" placeholder="example@gmail.com">
     <br><br>
