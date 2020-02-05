@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
     <title>Register</title>
         <link href="style.css" rel="stylesheet">
 </head>
@@ -16,7 +17,7 @@
     <input type ="text" name ="username" require autofocus>
 
     <label for ="password">Password: </label>
-    <input type ="text" name ="password" require autofocus>
+    <input type ="password" name ="password" require autofocus>
 
     <label for ="email">E-mail: </label>
     <input type ="email" name ="email" placeholder="example@gmail.com">
@@ -24,6 +25,7 @@
 
     
     <input type="submit" value="ลงทะเบียน">
+    <br>
 
     <a href="index.php" >กลับหน้าหลัก</a>
 </div>
