@@ -11,6 +11,10 @@
     <form action="register.php" method="POST">
     <label for ="username">Username: </label>
     <input type ="text" name ="username" require autofocus>
+
+    <label for ="password">Password: </label>
+    <input type ="text" name ="password" require autofocus>
+    
     <label for ="email">E-mail: </label>
     <input type ="email" name ="email" placeholder="example@gmail.com">
     <br><br>
