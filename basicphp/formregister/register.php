@@ -8,7 +8,9 @@
         <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<div>
 <h1>ลงทะเบียน</h1>
+
     <form action="register.php" method="POST">
     <label for ="username">Username: </label>
     <input type ="text" name ="username" require autofocus>
@@ -22,5 +24,6 @@
 
     
     <input type="submit" value="ลงทะเบียน">
+</div>
 </body>
 </html>
