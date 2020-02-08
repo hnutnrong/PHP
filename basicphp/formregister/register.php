@@ -6,12 +6,17 @@
     $login_email = $_POST['email'];
     $phone_number = $_POST['phone'];
 
+
+
+   
     //เข้ารหัส รหัสผ่าน
 
-    //$salt = 'mfklsamfkmsdklflmasdkf';  //มันก็จะเอา password ที่ใส่เข้ามามาเข้ารหัสรวมกับตัวนี้
-    //$hash_login_password= hash_hmac('eiei555',$login_password,$salt);
+    $salt = 'zxcvbnasdfghjklqwertyiop';  //มันก็จะเอา password ที่ใส่เข้ามามาเข้ารหัสรวมกับตัวนี้
+    $hash_login_password= password_hash($login_password.$salt,PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO member (username,password,email,phone) VALUE('$login_email','$login_password','$login_email','$phone_number')";
+     
+
+    $query = "INSERT INTO member (username,password,email,phone) VALUES ('$login_email','$hash_login_password','$login_email','$phone_number')";
 
     $result = mysqli_query($conn,$query);
 
