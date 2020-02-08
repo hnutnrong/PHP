@@ -21,6 +21,10 @@
 
     <label for ="email">E-mail: </label>
     <input type ="email" name ="email" placeholder="example@gmail.com">
+
+    <label for ="phone">Phone: </label>
+    <input type ="number" name ="phone" require autofocus>
+    
     <br><br>
 
     
