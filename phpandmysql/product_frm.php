@@ -59,8 +59,8 @@
                     <option value="">--เลือกประเภทสินค้า--</option>
                     <?php
                             while($row = mysqli_fetch_array($result,MYSQLI_NUM)){
-                               echo "<option value='$row[0]'>$row[1]</option>";
-                            }
+                               echo "<option value='$row[0]'>$row[1]</option>"; //$row[0] คือให้เริ่มตั้งแต่ row ไหน
+                            }                                                   //$row[1] คือให้แสดงข้อมูลที่อยู่ใน row นั้น
                     ?>
                                 //MYSQLINUM อ้างเป็น index ของ array โดยเริ่มจาก$row[0] ตั้งแต่ row แรก
                 </select>
