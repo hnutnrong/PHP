@@ -1,9 +1,11 @@
 <?php
     require 'connectdb.php';
 
-    $pt_name = 'เสื้อoff-white';
+    
+    $pt_name = 'YeezyBoost350';
 
-    $query = "INSERT INTO producttype (pt_id,pt_name) VALUES ('','$pt_name')";
+
+    $query = "INSERT INTO producttype (pt_id,pt_name) VALUES ('5','$pt_name')";
 
     $result = mysqli_query($dbcon,$query);
 

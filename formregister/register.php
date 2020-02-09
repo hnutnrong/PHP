@@ -1,12 +1,10 @@
 <?php
-    require '../config/connectdb.php';
+    require 'config/connectdb.php';
 
     $login_username = $_POST['username'];
     $login_password = $_POST['password'];
     $login_email = $_POST['email'];
     $phone_number = $_POST['phone'];
-
-
 
    
     //เข้ารหัส รหัสผ่าน
