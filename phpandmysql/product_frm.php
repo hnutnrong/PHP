@@ -44,7 +44,7 @@
             ใช้ชื้อขายได้</label>
 
             <label>
-            <input type="radio" name="pro_dtatus" value="1" id="pro_status_1">
+            <input type="radio" name="pro_status" value="1" id="pro_status_1">
             อยู่ระหว่างปรับปรุง</label>
 
             <br>
