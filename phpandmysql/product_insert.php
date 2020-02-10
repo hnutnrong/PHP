@@ -2,7 +2,12 @@
 
     require 'connectdb.php';
 
-    
+    // if(empty($_POST['pro_name'])){  ทำให้มีเงื่อนไขและปลอดภัยยิ่งขึ้น
+    //     echo "กรุณากรอกข้อมูลสินค้า";
+    //     exit();
+    // }else{
+    //     $pro_name = mysqli_real_escape_string($dbcon,$_POST['pro_name']);
+    // }
 
 
     $pro_name = $_POST['pro_name'];
