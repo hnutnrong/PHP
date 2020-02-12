@@ -67,6 +67,7 @@
             <br><br>
 
             <input type="submit" name="submit" id="submit" value="เพิ่มข้อมูล">
-            
+</fieldset>
+</form>
 </body>
 </html>

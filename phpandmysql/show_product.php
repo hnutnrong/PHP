@@ -29,6 +29,7 @@
                 <th>ราคา</th>
                 <th>วันที่เพิ่ม</th>
                 <th>หมวดสินค้า</th>
+                <th>แก้ไข</th>
                
             </tr>
         <?php
@@ -38,10 +39,13 @@
             <tr>
                 <td><?php echo $row['pro_id']; ?></td>
                 <td><?php echo $row['pro_name']; ?></td>
-                <td><?php echo $row['pro_price']; ?></td>
+                <td><?php echo number_format($row['pro_price'],2); ?></td>  <!-- number_format จัดให้ตัวเลขสวยงาม -->
                 <td><?php echo $row['pro_dateadd']; ?></td>
                 <td><?php echo $row['pt_name']; ?></td>
+                <td><a href="update_product_frm.php?pro_id=<?php echo $row['pro_id']; ?>"> แก้ไข </a></td>
+                         <!-- ?pro_id คือ บอกว่าเราจะแก้ไขอะไร -->
             </tr>
+                 
         <?php
                 }
                 mysqli_free_result($result);
