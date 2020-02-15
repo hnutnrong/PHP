@@ -30,6 +30,7 @@
                 <th>วันที่เพิ่ม</th>
                 <th>หมวดสินค้า</th>
                 <th>แก้ไข</th>
+                <th>ลบ</th>
                
             </tr>
         <?php
@@ -44,6 +45,8 @@
                 <td><?php echo $row['pt_name']; ?></td>
                 <td><a href="update_product_frm.php?pro_id=<?php echo $row['pro_id']; ?>"> แก้ไข </a></td>
                          <!-- ?pro_id คือ บอกว่าเราจะแก้ไขอะไร -->
+                <td><a href="delete_product.php?pro_id=<?php echo $row['pro_id']; ?>"> ลบ </a></td>
+
             </tr>
                  
         <?php
