@@ -19,7 +19,7 @@
     ///upload image
     $ext = pathinfo(basename($_FILES['pro_image']['name']),PATHINFO_EXTENSION);
     $new_image_name = 'img_' . uniqid() . "." . $ext; //ชื่อไฟล์ใหม่
-    $image_path = "images/";
+    $image_path = "Users/MyDevelops/PHP/phpandmysql/images/";
     $upload_path = $image_path . $new_image_name;
 
     //uploading
