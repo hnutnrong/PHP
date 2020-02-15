@@ -29,6 +29,7 @@
                 <th>ราคา</th>
                 <th>วันที่เพิ่ม</th>
                 <th>หมวดสินค้า</th>
+                <th>รูปภาพ</th>
                 <th>แก้ไข</th>
                 <th>ลบ</th>
                
@@ -43,6 +44,8 @@
                 <td><?php echo number_format($row['pro_price'],2); ?></td>  <!-- number_format จัดให้ตัวเลขสวยงาม -->
                 <td><?php echo $row['pro_dateadd']; ?></td>
                 <td><?php echo $row['pt_name']; ?></td>
+                <td><img src ="images/ <?php echo $row['pro_image']; ?>" width="100px" height ="100px"></td>
+                
                 <td><a href="update_product_frm.php?pro_id=<?php echo $row['pro_id']; ?>"> แก้ไข </a></td>
                          <!-- ?pro_id คือ บอกว่าเราจะแก้ไขอะไร -->
                 <td><a href="delete_product.php?pro_id=<?php echo $row['pro_id']; ?>"> ลบ </a></td>

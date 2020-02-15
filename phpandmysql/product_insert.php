@@ -15,8 +15,24 @@
     $pro_dateadd = $_POST['pro_dateadd'];
     $pro_status = $_POST['pro_status'];
     $pt_id = $_POST['pt_id'];
+    
+    ///upload image
+    $ext = pathinfo(basename($_FILES['pro_image']['name']),PATHINFO_EXTENSION);
+    $new_image_name = 'img_' . uniqid() . "." . $ext; //ชื่อไฟล์ใหม่
+    $image_path = "images/";
+    $upload_path = $image_path . $new_image_name;
 
-    $q = "INSERT INTO product (pro_name,pro_price,pro_dateadd,pro_status,pt_id) VALUES ('$pro_name','$pro_price','$pro_dateadd','$pro_status','$pt_id')";
+    //uploading
+    $success = move_uploaded_file($_FILES['pro_image']['tmp_name'],$upload_path);
+        if($success==FALSE){
+            echo "ไม่สามารถ upload รูปภาพได้";
+            exit();
+        }
+
+     $pro_image = $new_image_name;
+
+
+    $q = "INSERT INTO product (pro_name,pro_price,pro_dateadd,pro_status,pt_id,pro_image) VALUES ('$pro_name','$pro_price','$pro_dateadd','$pro_status','$pt_id','$pro_image')";
 
     $result = mysqli_query($dbcon,$q);
 
