@@ -14,7 +14,7 @@
 
      
 
-    $query = "INSERT INTO member (username,password,email,phone) VALUES ('$login_email','$hash_login_password','$login_email','$phone_number')";
+    $query = "INSERT INTO member (login_username,login_password,email,phone) VALUES ('$login_username','$hash_login_password','$login_email','$phone_number')";
 
     $result = mysqli_query($conn,$query);
 

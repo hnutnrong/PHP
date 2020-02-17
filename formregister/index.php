@@ -13,7 +13,7 @@
         <input type="text" name="username" required autofocus>
 
         <label for="password">Password: </label>
-        <input type="passwod" name="passward" required>
+        <input type="password" name="password" required>
         <br>
 
         <input type="submit" value="Log in">
